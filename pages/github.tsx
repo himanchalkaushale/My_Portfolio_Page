@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { VscRepo, VscPerson } from 'react-icons/vsc';
+import { VscRepo } from 'react-icons/vsc';
 import styles from '@/styles/GithubPage.module.css';
 import { User } from '@/types';
 

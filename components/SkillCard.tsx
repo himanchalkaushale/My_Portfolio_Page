@@ -18,6 +18,7 @@ import {
     SiGithubactions
 } from 'react-icons/si';
 import { DiDatabase } from 'react-icons/di';
+import { IconType } from 'react-icons';
 
 interface SkillCardProps {
     title: string;
@@ -26,7 +27,7 @@ interface SkillCardProps {
     techStack: string[];
 }
 
-const headerIconMap: { [key: string]: any } = {
+const headerIconMap: { [key: string]: IconType } = {
     react: FaReact,
     docker: FaDocker,
     openai: SiOpenai,
@@ -34,7 +35,7 @@ const headerIconMap: { [key: string]: any } = {
 };
 
 // Map tech names to their corresponding icons with colors
-const techIconMap: { [key: string]: { icon: any; color: string } } = {
+const techIconMap: { [key: string]: { icon: IconType; color: string } } = {
     'React': { icon: FaReact, color: '#61DAFB' },
     'TypeScript': { icon: SiTypescript, color: '#3178C6' },
     'JavaScript': { icon: SiJavascript, color: '#F7DF1E' },

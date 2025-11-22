@@ -33,7 +33,7 @@ const ContactForm = () => {
 
       setSubmitStatus('success');
       setFormData({ name: '', email: '', subject: '', message: '' });
-    } catch (error) {
+    } catch {
       setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);
@@ -47,8 +47,8 @@ const ContactForm = () => {
         <div className={styles.contactHeader}>
           <h1 className={styles.contactTitle}>Contact Me</h1>
           <p className={styles.contactSubtitle}>
-            Have a project in mind or just want to chat? I'd love to hear from you.
-            Send me a message and I'll get back to you as soon as possible.
+            Have a project in mind or just want to chat? I&apos;d love to hear from you.
+            Send me a message and I&apos;ll get back to you as soon as possible.
           </p>
         </div>
 
@@ -130,7 +130,7 @@ const ContactForm = () => {
         <div className={styles.formHeader}>
           <h2 className={styles.formTitle}>Send a Message</h2>
           <p className={styles.formSubtitle}>
-            Fill out the form below and I'll get back to you as soon as possible.
+            Fill out the form below and I&apos;ll get back to you as soon as possible.
           </p>
         </div>
 
@@ -210,7 +210,7 @@ const ContactForm = () => {
 
           {submitStatus === 'success' && (
             <div className={styles.successMessage}>
-              ✅ Message sent successfully! I'll get back to you soon.
+              ✅ Message sent successfully! I&apos;ll get back to you soon.
             </div>
           )}
 
