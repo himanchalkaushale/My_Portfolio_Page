@@ -1,0 +1,177 @@
+.card {
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #61dafb;
+    box-shadow:
+        0 0 20px rgba(97, 218, 251, 0.4),
+        0 0 40px rgba(97, 218, 251, 0.2),
+        0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.icon {
+    font-size: 2rem;
+    color: #61dafb;
+    flex-shrink: 0;
+}
+
+.title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #e1e4e8;
+    margin: 0;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    max-width: 100%;
+}
+
+.description {
+    font-size: 0.95rem;
+    color: #d1d5da;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.techStack {
+    margin-top: 0.75rem;
+}
+
+.techTitle {
+    font-size: 0.9rem;
+    color: #8b949e;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tag {
+    background-color: #2d2d2d;
+    color: #e1e4e8;
+    padding: 0.4rem 0.85rem;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    border: 1px solid #3e3e3e;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    transition: all 0.2s ease;
+}
+
+.tag:hover {
+    background-color: #3a3a3a;
+    border-color: #4e4e4e;
+    transform: translateY(-2px);
+}
+
+.techIcon {
+    font-size: 1rem;
+    flex-shrink: 0;
+}
+
+.techName {
+    white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+    .card {
+        padding: 1.25rem;
+        max-width: 100%;
+    }
+
+    .title {
+        font-size: 1.05rem;
+        line-height: 1.3;
+    }
+
+    .description {
+        font-size: 0.9rem;
+    }
+
+    .icon {
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        padding: 1rem;
+        gap: 0.75rem;
+    }
+
+    .header {
+        gap: 0.4rem;
+    }
+
+    .title {
+        font-size: 0.95rem;
+        line-height: 1.2;
+    }
+
+    .description {
+        font-size: 0.85rem;
+        line-height: 1.4;
+    }
+
+    .icon {
+        font-size: 1.5rem;
+    }
+
+    .tag {
+        font-size: 0.75rem;
+        padding: 0.3rem 0.65rem;
+    }
+
+    .techIcon {
+        font-size: 0.85rem;
+    }
+
+    .techTitle {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .card {
+        padding: 0.75rem;
+    }
+
+    .title {
+        font-size: 0.9rem;
+    }
+
+    .description {
+        font-size: 0.8rem;
+    }
+
+    .tag {
+        font-size: 0.7rem;
+        padding: 0.25rem 0.5rem;
+    }
+}
