@@ -1,0 +1,144 @@
+.layout {
+  max-width: 900px;
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pageHeading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 0.5rem;
+}
+
+.githubPage {
+  width: 100%;
+  padding: 0.5rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.pageTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--accent-color);
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+}
+
+.pageSubtitle {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 3rem;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+.profileSection {
+  background: var(--article-bg);
+  border-radius: 8px;
+  padding: 3rem;
+  margin-bottom: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.profileInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.avatar {
+  border-radius: 50%;
+  border: 3px solid var(--accent-color);
+  width: 180px;
+  height: 180px;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.username {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--text-color);
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.stats {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.statItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  color: var(--text-secondary);
+}
+
+.statIcon {
+  color: var(--accent-color);
+  font-size: 1.2rem;
+}
+
+.githubButton {
+  display: inline-block;
+  background-color: var(--accent-color);
+  color: var(--bg-color);
+  font-weight: 600;
+  padding: 0.8rem 2rem;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  font-size: 1.1rem;
+}
+
+.githubButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  filter: brightness(1.1);
+}
+
+@media screen and (max-width: 600px) {
+  .profileSection {
+    padding: 2rem;
+    width: 90%;
+  }
+
+  .avatar {
+    width: 100px;
+    height: 100px;
+  }
+
+  .username {
+    font-size: 1.5rem;
+  }
+
+  .stats {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+  }
+}
